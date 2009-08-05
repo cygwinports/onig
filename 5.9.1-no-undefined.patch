@@ -1,0 +1,11 @@
+--- origsrc/onig-5.9.1/Makefile.am	2006-11-21 23:03:31.000000000 -0600
++++ src/onig-5.9.1/Makefile.am	2009-08-05 00:10:15.948769300 -0500
+@@ -30,7 +30,7 @@ libonig_la_SOURCES = regint.h regparse.h
+ 	$(encdir)/euc_tw.c $(encdir)/euc_kr.c $(encdir)/big5.c \
+ 	$(encdir)/gb18030.c $(encdir)/koi8_r.c $(encdir)/cp1251.c
+ 
+-libonig_la_LDFLAGS = -version-info $(LTVERSION)
++libonig_la_LDFLAGS = -version-info $(LTVERSION) -no-undefined
+ 
+ EXTRA_DIST = HISTORY README.ja index.html index_ja.html \
+ 	doc/API doc/API.ja doc/RE doc/RE.ja doc/FAQ doc/FAQ.ja \

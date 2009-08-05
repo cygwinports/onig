@@ -1,0 +1,73 @@
+onig
+------------------------------------------
+Oniguruma is a regular expressions library. The characteristics of this 
+library is that different character encoding for every regular 
+expression object can be specified. (supported APIs: GNU regex, POSIX 
+and Oniguruma native)
+
+Runtime requirements:
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-2.19.51-1
+  cygport-0.9.8-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.geocities.jp/kosako3/oniguruma/
+
+Canonical download:
+  http://www.geocities.jp/kosako3/oniguruma/
+
+-------------------------------------------
+
+Build instructions:
+  unpack onig-5.9.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./onig-5.9.1-X.cygport all
+
+This will create:
+  /usr/src/libonig-devel-5.9.1-X.tar.bz2
+  /usr/src/libonig2-5.9.1-X.tar.bz2
+  /usr/src/onig-5.9.1-X-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libonig2)
+  /usr/bin/cygonig-2.dll
+  /usr/share/doc/onig/AUTHORS
+  /usr/share/doc/onig/COPYING
+  /usr/share/doc/onig/HISTORY
+  /usr/share/doc/onig/README
+
+(libonig-devel)
+  /usr/bin/onig-config
+  /usr/include/oniggnu.h
+  /usr/include/onigposix.h
+  /usr/include/oniguruma.h
+  /usr/lib/libonig.a
+  /usr/lib/libonig.dll.a
+  /usr/lib/libonig.la
+
+------------------
+
+Port Notes:
+
+----- version 5.9.1-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

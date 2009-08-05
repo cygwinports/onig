@@ -1,0 +1,8 @@
+category: Libs
+requires: libonig2
+external-source: onig
+sdesc: "Oniguruma regex library (development)"
+ldesc: "Oniguruma is a regular expressions library. The characteristics 
+of this library is that different character encoding for every regular 
+expression object can be specified. (supported APIs: GNU regex, POSIX 
+and Oniguruma native)"

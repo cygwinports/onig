@@ -1,0 +1,8 @@
+DESCRIPTION="Oniguruma regex library"
+HOMEPAGE="http://www.geocities.jp/kosako3/oniguruma/"
+SRC_URI="${HOMEPAGE}/archive/${P}.tar.gz"
+PATCH_URI="5.9.1-no-undefined.patch"
+
+PKG_NAMES="${PN} libonig2 libonig-devel"
+libonig2_CONTENTS="usr/bin/cygonig-2.dll usr/share/doc/"
+libonig_devel_CONTENTS="usr/bin/onig-config usr/include/ usr/lib/"
